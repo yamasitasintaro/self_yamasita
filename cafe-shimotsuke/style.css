@@ -1,0 +1,177 @@
+/* ページ全体の共通スタイルからかく */
+html,
+
+body{ 
+    /* ブラウザ標準の空白を消す */
+    margin: 0;
+    
+    /* フォントの名前が日本語orあいだにスペースが入る時は""で囲む */
+    /* 書く順番が早い方から優先される */
+    font-family: system-ui, "Noto Sans JP",Arial, sans-serif;
+    font-size: 16px;
+    color: saddlebrown;
+    /* 要素の背景色　p.118 */
+    /*  bgc */
+    background-color: floralwhite;
+    
+    /* background-image: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.3)), url("images/background.png"); */
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 24px 16px ; */
+/* 
+    padding-top: 24px;
+    padding-right: 16px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+
+ */
+   
+    
+
+}
+.container{
+    /* 要素の横幅の指定　p.122 */
+    /* 最大幅 */
+    max-width: 920px;
+    margin: 24px auto;
+    padding: 0 16px;
+
+}
+/* h1{
+    background-color: rgb(255, 144, 144);
+} */
+.italic{
+    /* 文字のスタイル　斜めにするなど p.116*/
+    font-style: italic;
+}
+.bold{
+    /* 文字の太さ */
+    font-weight: bold;
+}
+.underline{
+    /* 文字の装飾　アンダーラインなど */
+    text-decoration: underline;
+}
+.center{
+    /* 文字揃えの指定 p.123 */
+    text-align: center;
+}
+.site-header{
+    background-color: pink;
+    color: white;
+    /* p.114 */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgb(0, 0, 0,0.3)) ,url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* 余白の指定 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 24px 16px ;
+}
+.brand{
+    text-align: center;
+    margin: 0 8px 8px;
+}
+.section-title{
+    text-align: center;
+    color: sienna;
+    font-size: 20px;
+    margin: 24px 0 12px;
+}
+.recommendation{
+    /* cssで使う単位p113　相対単位 */
+    width: 50%;
+    margin: 0 auto;
+}
+.recommendation-content{
+    /* background-color: pink; */
+    /* 枠線の設定 */
+    border: 1px solid tan;
+    /* 角丸の設定　p120 */
+    border-radius: 8px;
+    padding: 8px;
+    background-color: seashell;
+}
+
+.tags{
+    margin-top: 8px;
+}
+.tag{
+    background-color: wheat;
+    border: 1px solid burlywood;
+    /* 内側の余白　p１２５ */
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    /* 外側の余白　p１２５ */
+    margin-right: 6px;
+    color: saddlebrown;
+}
+.site-nav{
+    list-style-type: none;
+    /* フレックスボックスp.131 */
+    display: flex;
+/* 主軸方向の揃え位置の指定p.135 */
+    justify-content: space-evenly;
+    /* 主軸の向きを変える */
+    flex-direction: row;
+    /* フレックスアイテム同士の余白p.135 */
+    gap: 16px;
+    /* フレックスアイテムの折り返し */
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+.nav-link{
+    color: white;
+    /* 文字の装飾を消す */
+    text-decoration: none;
+}
+.hero{
+    background-color: linen;
+    padding: 48px 16px;
+}
+.read{
+    /* 行の高さ（行間）↓1.8倍　１.６〜１.８が多い */
+    line-height: 1.8;
+}
+
+.picks{
+    text-align: center;
+}
+.card{
+    width: 200px;
+    background-color: seashell;
+    padding: 12px ;
+    margin: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+.thumb{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.card-title{
+    margin: 0 0 6px;
+    color:chocolate;
+}
+.card-text{
+    margin: 0;
+    line-height: 1,7;
+}
+.ib{
+    display: inline-block;
+}
+.site-footer{
+    background-color: linen;
+    padding: 12p 16px;
+    text-align: center;
+
+}
+.site-footer-smal{
+    color: peru;
+    margin: 0;
+}
