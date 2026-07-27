@@ -1,0 +1,96 @@
+/* ページ全体の基本設定 */
+body {
+    /* 背景色（ここを好きな色に変えてみよう！ 例: lightblue, pink, orange） */
+    background-color: aliceblue;
+    
+    /* 文字のフォント */
+    font-family: sans-serif;
+    
+    /* ページ全体の文字色 */
+    color: darkslategray;
+    
+    /* 外側の余白をなくす */
+    margin: 0;
+    
+    /* 内側の余白を設定 */
+    padding: 40px 20px;
+}
+
+/* プロフィールカードのデザイン */
+.profile-card {
+    /* カードの背景色 */
+    background-color: white;
+    
+    /* カードの最大幅 */
+    max-width: 400px;
+    
+    /* カードを画面の中央に寄せる */
+    margin: 0 auto;
+    
+    /* カード内側の余白 */
+    padding: 30px;
+    
+    /* 角を少し丸くする */
+    border-radius: 12px;
+    
+    /* うっすらと影をつける */
+    box-shadow: 0 4px 10px lightgray;
+    
+    /* 中身のテキストを中央揃えにする */
+    text-align: center;
+}
+
+/* 画像のデザイン */
+.profile-img {
+    /* 画像の幅と高さ */
+    width: 150px;
+    height: 150px;
+    
+    /* 画像を完全に丸くする */
+    border-radius: 50%;
+    
+    /* はみ出した部分を切り取って綺麗に収める */
+    object-fit: cover;
+    
+    /* 画像の下の余白 */
+    margin-bottom: 20px;
+}
+
+/* 見出し１（一番大きい文字）のデザイン */
+h1 {
+    /* 見出しの色 */
+    color: midnightblue;
+    margin-top: 0;
+}
+
+/* 見出し２（次に大きい文字）のデザイン */
+h2 {
+    color: royalblue;
+    
+    /* 下線をつける */
+    border-bottom: 2px solid royalblue;
+    
+    /* 下線と文字の隙間 */
+    padding-bottom: 5px;
+    
+    /* 上の隙間 */
+    margin-top: 30px;
+    
+    /* 見出し２だけは左揃えにする */
+    text-align: left;
+}
+
+/* 箇条書き（リスト）のデザイン */
+ul {
+    /* リストを左揃えにする */
+    text-align: left;
+    
+    /* 左側の余白 */
+    padding-left: 20px;
+}
+
+/* 箇条書きの丸（一つ一つの項目）のデザイン */
+li {
+    /* 項目の下の余白を開ける */
+    margin-bottom: 8px;
+}

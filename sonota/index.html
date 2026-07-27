@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSレイアウト集中ドリル</title>
+    <!-- 共通システムスタイル（変更不要） -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 回答記述用スタイル -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="drill-header">
+        <h1>CSSレイアウト集中ドリル</h1>
+        <p>HTMLは変更せず、CSSのみを編集して指定のレイアウトを完成させましょう！</p>
+    </header>
+
+    <main class="drill-container">
+        <!-- 問1: 横並びナビゲーションバー -->
+        <section class="drill-section" id="drill1">
+            <h2 class="drill-title">問1: 横並びナビゲーションバー</h2>
+            <div class="drill-desc">
+                <p>ヘッダー内の「ロゴ」を左端に、「ナビゲーションメニュー」を右端に横並びにしてください。</p>
+                <p>※ナビゲーションメニュー自体（HomeやAboutなど）も横並びにしてください。</p>
+                <p><strong>【レスポンシブ条件】</strong>スマートフォン表示（画面幅768px以下）では、ロゴとメニューが縦に並び、それぞれ中央寄せになるようにしてください。</p>
+            </div>
+            
+            <!-- 編集対象のエリア -->
+            <div class="question-area qa-1">
+                <header class="site-header">
+                    <div class="logo">MyBrand</div>
+                    <nav class="nav-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </section>
+
+        <!-- 問2: 3カラムのカード型レイアウト -->
+        <section class="drill-section" id="drill2">
+            <h2 class="drill-title">問2: 3カラムのカード型レイアウト</h2>
+            <div class="drill-desc">
+                <p>3つのカードを等幅で横並びにしてください（カードの間に適切な余白を開けてください）。</p>
+                <p>※テキストの文字数が違っても、3つのカードの高さが綺麗に揃う（最も長いカードに揃う）ようにしてください。</p>
+                <p><strong>【レスポンシブ条件】</strong>スマートフォン表示（画面幅768px以下）では、カードが横幅いっぱいに広がり、縦に3つ並ぶようにしてください。</p>
+            </div>
+
+            <!-- 編集対象のエリア -->
+            <div class="question-area qa-2">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">カード画像1</div>
+                        <div class="card-content">
+                            <h3>タイトル1</h3>
+                            <p>ここにカードの紹介テキストが入ります。テキストが入ることで高さが変わる可能性があります。</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">カード画像2</div>
+                        <div class="card-content">
+                            <h3>タイトル2</h3>
+                            <p>ここにカードの紹介テキストが入ります。テキストの量に応じてカードの高さが揃うように工夫してみましょう。</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">カード画像3</div>
+                        <div class="card-content">
+                            <h3>タイトル3</h3>
+                            <p>ここにカードの紹介テキストが入ります。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 問3: 互い違いのレイアウト -->
+        <section class="drill-section" id="drill3">
+            <h2 class="drill-title">問3: 互い違いのレイアウト</h2>
+            <div class="drill-desc">
+                <p>1つ目の項目は「左に画像、右にテキスト」、2つ目の項目は「左にテキスト、右に画像」と、互い違いになるように横並びで配置してください。</p>
+                <p><strong>【レスポンシブ条件】</strong>スマートフォン表示（画面幅768px以下）では、どちらも「上が画像、下がテキスト」の順番で縦並びになるようにしてください。</p>
+            </div>
+
+            <!-- 編集対象のエリア -->
+            <div class="question-area qa-3">
+                <div class="media-container">
+                    <!-- 項目1 -->
+                    <div class="media-item">
+                        <div class="media-image">画像A</div>
+                        <div class="media-body">
+                            <h3>特徴その1</h3>
+                            <p>ここに特徴1の説明テキストが入ります。テキストと画像が適切な間隔で並ぶように調整してください。</p>
+                        </div>
+                    </div>
+                    <!-- 項目2 -->
+                    <div class="media-item">
+                        <div class="media-image">画像B</div>
+                        <div class="media-body">
+                            <h3>特徴その2</h3>
+                            <p>ここに特徴2の説明テキストが入ります。PC表示ではテキストが左、画像が右になりますが、スマホ表示では画像が上になります。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 問4: ヒーローエリアの上下左右中央寄せ -->
+        <section class="drill-section" id="drill4">
+            <h2 class="drill-title">問4: ヒーローエリアの上下左右中央寄せ</h2>
+            <div class="drill-desc">
+                <p>グレー背景のヒーローエリア内のコンテンツ（タイトル、サブタイトル、ボタン）を、エリア全体のど真ん中（上下左右中央）に配置してください。</p>
+            </div>
+
+            <!-- 編集対象のエリア -->
+            <div class="question-area qa-4">
+                <div class="hero-area">
+                    <div class="hero-content">
+                        <h2 class="hero-title">Catch Copy</h2>
+                        <p class="hero-lead">ここに魅力的なサブタイトルやリード文が入ります。</p>
+                        <a href="#" class="hero-btn">詳しく見る</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="drill-footer">
+        <p>&copy; 2026 CSS Layout Drill</p>
+    </footer>
+</body>
+</html>

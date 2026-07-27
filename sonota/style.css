@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* =========================================
+   ここから下に回答を記述してください！
+   ※ 共通レイアウトや装飾スタイルは css/common.css に記述されています。
+   ========================================= */
+
+/* -----------------------------------------
+   問1: 横並びナビゲーションバー
+   ----------------------------------------- */
+.qa-1 .site-header {
+    /* TODO: ここにコードを書く（全体を横並びに） */
+}
+.qa-1 .nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* TODO: ここにコードを書く（メニューの項目を横並びに） */
+}
+.qa-1 .nav-menu li {
+    /* 必要に応じてコードを書く */
+}
+.qa-1 .nav-menu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+.qa-1 .nav-menu a:hover {
+    color: #3b82f6;
+}
+
+/* TODO: 問1のレスポンシブ表示（画面幅768px以下）用のメディアクエリを自分で記述してください */
+
+
+
+/* -----------------------------------------
+   問2: 3カラムのカード型レイアウト
+   ----------------------------------------- */
+.qa-2 .card-container {
+    /* TODO: ここにコードを書く（カードを横並びに、隙間の調整も） */
+}
+.qa-2 .card {
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    /* 必要に応じてコードを書く */
+}
+.qa-2 .card-content {
+    padding: 15px;
+}
+.qa-2 .card-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.15rem;
+}
+.qa-2 .card-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+/* TODO: 問2のレスポンシブ表示（画面幅768px以下）用のメディアクエリを自分で記述してください */
+
+
+
+/* -----------------------------------------
+   問3: 互い違いのレイアウト
+   ----------------------------------------- */
+.qa-3 .media-container {
+    /* 必要に応じてコンテナのスタイルを書く */
+}
+.qa-3 .media-item {
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* TODO: ここにコードを書く（横並びにする、隙間の調整も） */
+}
+.qa-3 .media-item:last-child {
+    margin-bottom: 0;
+}
+.qa-3 .media-body {
+    /* TODO: 必要に応じてテキスト部分のスタイルを書く（余白など） */
+}
+.qa-3 .media-body h3 {
+    margin: 0 0 10px;
+    font-size: 1.25rem;
+}
+.qa-3 .media-body p {
+    margin: 0;
+    color: #64748b;
+}
+
+/* 2つ目のアイテムの並び順を逆にする（PC表示のみ） */
+/* ヒント: flex-direction を反転させる疑似クラスなどを使います */
+/* TODO: ここにコードを書く */
+
+/* TODO: 問3のレスポンシブ表示（画面幅768px以下）用のメディアクエリを自分で記述してください */
+
+
+
+/* -----------------------------------------
+   問4: ヒーローエリアの上下左右中央寄せ
+   ----------------------------------------- */
+.qa-4 .hero-area {
+    /* TODO: ここにコードを書く（Flexboxを有効にして、上下左右の中央に寄せる） */
+}
+.qa-4 .hero-content {
+    text-align: center;
+}

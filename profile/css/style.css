@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/* 全体に共通の設定 */
+
+/* 
+背景色　＃ffffff 
+文字の色メイン：#383e45
+文字の色ナビゲーション：#24292e
+基本の文字サイズ:14.4px
+セクション見出し:32px
+名前:16px 
+自転車タイトル:16px
+自転車テキスト:14.4px
+著作権:8px
+フォントファミリー:Noto Sans JP
+
+コンテンツの横幅
+最大は960px
+画面の横幅の92％
+（左右に4％の余白）
+*/
+
+/* CSS変数（カスタムプロパティ）の定義 */
+:root{ /* :root のなかに変数を作る */
+    /* 変数名は--（ハイフン２個）で始める */
+    --color-bg:#ffffff ;
+    --color-text-main:#383e45;
+    --color-text-nav:#24292e;
+    /* font-size */
+    --font-size-base: 0.9rem; /*1rem = 16px 0.9rem = 14.4px  */
+    --font-size-md:1rem;
+    --font-size-lg:2rem;
+    --font-size-sm:0.5rem;
+}
+
+/* 初期設定の余白をリセット */
+/* 「*」 = 全称セレクタ （全部の要素に対して機能） */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 画像サイズ調整()画面からはみ出さないように */
+img{
+    max-width: 100%;
+}
+
+/* サイトの基本設定 */
+body{
+    /* background-color: rgb(95, 255, 164); */
+    font-size: var(--font-size-base);  /* 変数を呼び出すには　var(変数名) */
+    font-family: "Noto sans JP", sans-serif; /* 文字の種類 */
+    line-height: 1.5;/* 行間 */
+    background-color: var(--color-bg);
+}
+
+a{
+    color: var(--color-text-main);
+    text-decoration: none;
+}
+
+/* コンテンツの横幅の設定 */
+.contenainer{
+    max-width: 960px; /* 最大サイズの設定*/
+    width: 92%;
+    /* 画面の９２％のサイズを基本にする */
+    /* background-color: red; */
+    margin: 0 auto;
+}
+
+/* 個々のパーツごとの設定 */
+/* ヘッダーの設定 */
+nav ul{ /*　セレクタの書き方応用 137p */
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.header-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    width: 120px;
+    line-height: 0;
+}
+
+header{
+    padding: 10px 0;
+}
+
+/* header 内のaタグを指定 */
+header a{
+    color: var(--color-text-nav);/*変数を指定*/
+
+}
+
+/* メインビジュアル */
+.mainvisual{
+    /* 元のアスペクト比を崩さないようにする */
+    height: 600px;
+    width: 100%;
+    /* object-fit: cover = 画像の縦横比を維持したまま、ボックスからはみ出した部分を切り取る */
+    object-fit: cover;
+}
+
+/* セクション見出し */
+h2{
+    font-size:  var(--font-size-lg);
+    /* 文字の太さ */
+    font-weight: 600;
+    /* nomal = 400 /　bold = 700*/
+    text-align: center;
+    margin-bottom: 60px;/* 要素の下側の空白 */
+    text-decoration: underline;/* 下線を作る */
+    text-underline-offset: 8px;/* 下線と文字の間隔を設定 */
+}
+
+/* about セクション */
+.about_img{
+    /* 高さ100　横幅100 */
+    width: 100px;
+    height: 100px;
+    /* 正方形の要素に対して角丸５０％　＝　正円 */
+    border-radius: 50%;
+    /* 中央よせ */
+    display: block;
+    /* 上０/左右auto/下16px*/
+    margin: 0 auto 16px;
+}
+
+.about_name{
+    /* アルファベットの大文字・小文字の設定 */
+    /* lowercase = 全部小文字 */
+    /* uppercase = 全部大文字 */
+    /* capitalize  =単語の先頭のみ大文字*/
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-size: var(--font-size-md);
+}
+
+section#about{
+    /* 要素の外側　＝ margin
+    要素の内側　padding */
+    padding:  80px 0 50px;
+}
+
+/* bicycle セクション */
+.biycycle_list{
+    display: flex;
+    /* flexbox の主軸方向を指定する （横並び、縦並びなど）*/
+    flex-direction: column;
+    gap: 30px;
+    /* 箇条書きの点・を消す */
+    list-style-type: none;
+}
+.biycycle_list h3{
+    font-size: var(--font-size-md);
+}
+
+/* 同じスタイルを複数のセレクタに適応できる */
+/* 「,」で区切れば何個でも併用可能 */
+.biycycle_list h3,
+.biycycle_list img{
+    margin-bottom: 20px;
+}
+
+.biycycle_list h3,
+.biycycle_list p{
+    text-align: center;
+}
+section#biycycle{
+    pad: 50px 0 100px;
+}
+
+footer{
+    padding: 10px 0;
+    text-align: center;
+    font-size: var(--font-size-sm);
+}
+/* メディアクエリ */
+@media  (min-width:600px)  {
+    /* 画面の横幅が600px以上の時に適用するスタイル */
+    .about-contents{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .about_img{
+        margin: 0;
+    }
+
+    .biycycle_list{
+        flex-direction: row;
+    }
+}
