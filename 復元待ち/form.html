@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フォームの練習</title>
+</head>
+<body>
+    <h1>フォームの練習</h1>
+    <form action="" method="post"></form>
+        <p>
+            <label> 名前：<input type="text" name="username" required placeholder="例：山田太郎"></label>
+        </p>
+        <p>
+            <label>メールアドレス： <input type="email" name="email" required placeholder="exa,ple@gmail.com"></label>
+        </p>
+        <p>
+            <label>パスワード： <input type="password" name="password" minlength="6" maxlength="20" required placeholder="6〜20字以内で入力"></label>
+        </p>
+        <p>
+            <label>電話番号： <input type="tel" name="phone" required placeholder="09012345678" pattern="[0-9]{10,11}" ></label>
+        <!-- 正規表現 １０桁か１１桁の０から９までの数字-->
+        </p>
+        <p>
+            <label>
+                年齢：<input type="number" name="age" placeholder="30" min="0" max="120
+                " required>
+            </label>
+        </p>
+        <p>
+            誕生日：<input type="date" name="birthday" required >
+        </p>
+        <p>
+            <label>予約時間： <input type="time" name="reservantion" min = "09:00" max="18:00" required> </label>
+        </p>
+        <p>
+            <label>開始日時： <input type="datetime-local" name="start"  >
+            </label>
+        </p>
+        <p>
+            
+            性別：
+            <label><input type="radio" name="gender" value="male" >男性</label>
+            <label><input type="radio" name="gender" value="female" >女性</label>
+            <label><input type="radio" name="gender" value="other" >その他</label>
+        </p>
+        <p>
+            <!-- チェックボックス　複数個選ぶ、オンオフ切り替え -->
+            趣味（複数選択可）： 
+            <label><input type="checkbox" name="hobby" value="music">音楽</label>
+            <label><input type="checkbox" name="hobby" value="supoets">スポーツ</label><label><input type="checkbox" name="hobby" value="reading">読書</label>
+        </p>
+        <p>
+            <!-- セレクトボックス（たくさんの選択肢の中から一つだけ選んで欲しい時） -->
+            <label>出身地：<select name="purefecture">
+                <option value="" disabled >選択して下さい</option>
+                <option value="yamaguti">山口県</option>
+                <option value="hukuoka"selected >福岡県</option>
+                <option value=""saga>佐賀県</option>
+            </select></label>
+        </p>
+        <p>s
+            <label>自己紹介： <br>
+            <textarea name="bio" powa="4" cols="40
+            " placeholder="簡単な自己紹介を入力して下さい"></textarea>
+            </label>
+        </p>
+        <p>
+            <label>
+                プロフィール画像： <input type="file" name="photo">
+            </label>
+        </p>
+        <p>
+            <label for="">好きな色: <input type="color" name="favcolor" value="red">
+            </label>
+        </p>
+        <p>
+            <label>ホームページ: <input type="url" name="homepege" placeholder="https://exmple.com">
+
+            </label>
+        </p>
+        <p>
+            <!-- disablad (無効にする。規約に同意するまで押せなくするものはこれを利用する) -->
+            <button type="submit" >送信</button>
+            <button type="reset" disabled>リセット</button>
+            <input type="submit" value="送信"disabled>
+            <input type="reset" value="リセット">
+        </p>
+</body>
+</html>

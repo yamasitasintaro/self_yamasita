@@ -1,0 +1,21 @@
+@charset "utf-8";
+#title{
+    color: red;
+    font-size: 24px;
+}
+/* id > class > 要素 */
+.note{
+    color: blue;
+    font-size: 16px;
+}
+.inportant{
+    font-size: 24px;
+}
+
+.btn{
+    color: green;
+    font-size: 18px;
+}
+body{
+    color: violet;
+}
